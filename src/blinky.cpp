@@ -4,8 +4,11 @@ volatile bool abort_program_ = false;
 
 int main()
 {
+	printf("Blinky application booted!\n");
+
 	auto& platform = VirtualPlatform::inst();
 
+	printf("Starting blink\n");
 	platform.startBlink();
 
 	while(!abort_program_)
