@@ -92,12 +92,20 @@ subdir('build/objcopy')
 
 embvm_demo_platforms_subproject = subproject('embvm-demo-platforms')
 blinky_sim_platform_dep = embvm_demo_platforms_subproject.get_variable('blinky_sim_platform_dep')
+if host_machine.cpu_family() == 'x86_64'
 blinky_sim_x86_platform_dep = embvm_demo_platforms_subproject.get_variable('blinky_sim_x86_platform_dep')
+endif
 
 if host_machine.cpu_family() == 'arm'
 blinky_nrf52dongle_platform_dep = embvm_demo_platforms_subproject.get_variable('blinky_nrf52dongle_platform_dep')
 blinky_nrf52dk_platform_dep = embvm_demo_platforms_subproject.get_variable('blinky_nrf52dk_platform_dep')
 endif
+
+# TODO: these are only required for the ARM examples... is this needed here?
+# or do we need a dependency refactor?
+embvm_core_subproject = subproject('embvm-core')
+framework_dep = embvm_core_subproject.get_variable('framework_dep')
+framework_threadless_dep = embvm_core_subproject.get_variable('framework_threadless_dep')
 
 # Configure the project to include `libc` headers by default
 #######################
