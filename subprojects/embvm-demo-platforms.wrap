@@ -2,3 +2,4 @@
 url = git@github.com:embvm/embvm-demo-platforms.git
 revision = master
 clone-recursive = true
+depth = 1
