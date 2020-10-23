@@ -23,7 +23,7 @@ subprojects/freertos-kernel.wrap
 subprojects/libc.wrap
 subprojects/libcpp.wrap
 subprojects/libmemory.wrap
-subprojects/microsoft-gsl.wrap
+subprojects/gsl-lite.wrap
 subprojects/nordic.wrap
 subprojects/nrfx.wrap
 subprojects/st-vl53l1x.wrap
