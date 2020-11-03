@@ -1,4 +1,4 @@
-This project's source code is released under the [MIT license](MIT-LICENSE.md) unless otherwise indicated at the top of the source file. This project uses [SPDX license IDs](https://spdx.dev/ids/) to indicate the specific license used.
+This project's source code is released under the [GPLv3 license](GPLv3-LICENSE.md) unless otherwise indicated at the top of the source file. This project uses [SPDX license IDs](https://spdx.dev/ids/) to indicate the specific license used.
 
 Licenses for any third-party software included in this repository can be found in the [Software Inventory](docs/software_inventory.xlsx).
 
