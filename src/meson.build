@@ -26,7 +26,7 @@ endif
 
 if host_machine.cpu_family() == 'arm'
 	# TODO: convert to using the objcopy module!
-	target_objcopy = find_program(meson.get_cross_property('objcopy'))
+	target_objcopy = find_program(meson.get_external_property('objcopy'))
 
 	########################
 	# NRF52 Dongle Targets #
